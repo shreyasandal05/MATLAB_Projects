@@ -25,10 +25,10 @@ dataSymbols = bi2de(reshape(dataBits, k, []).', 'left-msb');
 % Map symbols to IQ points
 % 16-QAM Constellation (example mapping)
 constellation = [
-    -3 -3;  -3 -1;  -3 +1;  -3 +3;
-    -1 -3;  -1 -1;  -1 +1;  -1 +3;
-    +1 -3;  +1 -1;  +1 +1;  +1 +3;
-    +3 -3;  +3 -1;  +3 +1;  +3 +3
+    -3 -3;  -3 -1;  -3 +3;  -3 +1;
+    -1 -3;  -1 -1;  -1 +3;  -1 +1;
+    +3 -3;  +3 -1;  +3 +3;  +3 +1
+    +1 -3;  +1 -1;  +1 +3;  +1 +1;
 ];
 
 % Generate IQ samples based on the symbols
